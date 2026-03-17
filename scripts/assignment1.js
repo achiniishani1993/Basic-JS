@@ -45,4 +45,4 @@ let c = 25;  /* Create a variable celsius */
 
 let f = (c * 9/5) + 32;   /* Convert the temperature to Fahrenheit */
 
-console.log("25°C is " + f + "°F")
+console.log(` ${c} °C is ${f} °F `)
