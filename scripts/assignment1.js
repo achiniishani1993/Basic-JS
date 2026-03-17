@@ -9,7 +9,11 @@ let fName = "Achini Ishani";
 let age = 32;
 let favColor = "red";
 
-console.log ("my name is " + fName + " , I'm " + age + " years old and my favorite color is " + favColor );
+console.log ("my name is " + fName + " , I'm " + age + " years old and my favorite color is " + favColor + "." );
+
+// Using backticks 
+
+console.log(`My name is ${fName}, I am ${age} years old, and my favorite color is ${favColor}.`);
 
 // Basic arithmetic operations
 
