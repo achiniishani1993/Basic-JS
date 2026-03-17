@@ -35,3 +35,14 @@ console.log("Multiplication: " + (x * y) );
 // division
 
 console.log("Division: " + (x / y) );
+
+
+
+// Additional: Temperature Converter
+
+
+let c = 25;  /* Create a variable celsius */
+
+let f = (c * 9/5) + 32;   /* Convert the temperature to Fahrenheit */
+
+console.log("25°C is " + f + "°F")
