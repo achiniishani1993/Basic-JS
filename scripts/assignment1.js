@@ -13,3 +13,21 @@ console.log ("my name is " + fName + " , I'm " + age + " years old and my favori
 
 // Basic arithmetic operations
 
+let x = 20;
+let y = 5;
+
+// addition 
+
+console.log("Addition: " + (x + y) );
+
+// subtraction
+
+console.log("Subtraction: " + (x - y) );
+
+// multiplication
+
+console.log("Multiplication: " + (x * y) );
+
+// division
+
+console.log("Division: " + (x / y) );
