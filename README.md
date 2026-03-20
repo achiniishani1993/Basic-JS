@@ -17,7 +17,7 @@ Temperature Converter – Convert Celsius to Fahrenheit and display the result.
 
 Assignment2.js
 
-# Exercise 1: Fixed 10% Discount
+ Exercise 1: Fixed 10% Discount
 📌 Description
 
 This program asks the user to enter a price (including a $ sign), removes the symbol, converts the value into a number, and applies a fixed 10% discount.
@@ -34,7 +34,7 @@ This program asks the user to enter a price (including a $ sign), removes the sy
 
 * Displays the new price using console.log() or DOM
 
-# Exercise 2: Dynamic Discount Calculator
+ Exercise 2: Dynamic Discount Calculator
 📌 Description
 
 This version improves the first exercise by allowing the user to enter a custom discount percentage.
