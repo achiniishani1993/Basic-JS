@@ -11,7 +11,7 @@ function priceFunction() {
     `Your New Price is ${discountedPrice.toFixed(2)}`;
 }
 
-
+// additional exercise 
 function discountFunction(){
     let amount = prompt ("Please enter the price of the item (ex:- $ 100.00)");
     amount = amount.replace("$", " ").trim();
