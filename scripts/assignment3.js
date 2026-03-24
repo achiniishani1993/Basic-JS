@@ -6,3 +6,15 @@ function isValidPassword(password , username){
     return true;
 }
 
+function formSubmit(e){
+    e.preventDefault();
+    
+    let username = document.getElementById("exampleInputName").value;
+    let password = document.getElementById("exampleInputPassword1").value;
+
+    if (isValidPassword(password,username)){
+        alert ("password is valid");
+    }else {
+        alert ("Invaild Password");
+    }
+}
