@@ -62,3 +62,24 @@ This version improves the first exercise by allowing the user to enter a custom 
      * Amount saved
 
      * Final price (formatted to 2 decimal places)
+
+
+ Assignment2.js
+
+ Exercise: Username & Password Validation Project
+
+ Features
+
+* Password must:
+
+     * Be at least 8 characters
+
+     * Cannot contain spaces
+
+     * Cannot include the username
+
+* Real-time validation using JavaScript
+
+* Accessible HTML form with aria-describedby for helper text
+
+* Prevents form submission if validation fails
