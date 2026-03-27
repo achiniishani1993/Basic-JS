@@ -83,3 +83,54 @@ This version improves the first exercise by allowing the user to enter a custom 
 * Accessible HTML form with aria-describedby for helper text
 
 * Prevents form submission if validation fails
+
+Assignment4.js
+
+This file contains solutions for three JavaScript exercises 
+focused on user input, arrays, loops, and basic arithmetic.
+
+--------------------------------------------------------------
+EXERCISE 1: Guess the Random Number
+--------------------------------------------------------------
+- Function: guessNumberGame()
+- Description: 
+    Generates a random number between 1 and 10. 
+    Repeatedly prompts the user to guess the number until correct. 
+    Provides feedback if the guess is too high, too low, or correct.
+- Features:
+    • Handles Cancel (ends the game if user clicks Cancel)
+    • Uses a while loop for repeated guesses
+    • Gives hints for user guidance
+- Example usage:
+    Click a button to start the game → prompt asks for a guess → alerts feedback
+
+--------------------------------------------------------------
+EXERCISE 2: Create an Array of Random Numbers
+--------------------------------------------------------------
+- Function: generateRandomArray(length)
+- Description:
+    Generates an array of specified length containing random numbers 
+    between 1 and 100.
+- Parameters:
+    • length (Number): desired length of the array
+- Returns: Array of random numbers
+- Features:
+    • Validates user input when used with prompt
+    • Displays result in HTML when connected to a button
+
+--------------------------------------------------------------
+EXERCISE 3: Calculate the Sum of Even Numbers in an Array
+--------------------------------------------------------------
+- Function: sumEvenNumbers(arr) or sumEvenFromInput()
+- Description:
+    Calculates the sum of all even numbers in an array.
+- Parameters:
+    • arr (Array of Numbers): the array to sum
+- Returns: Number (sum of even numbers)
+- Features:
+    • Can take user input from prompt as comma-separated values
+    • Handles Cancel gracefully
+    • Displays results in HTML instead of console
+- Example:
+    Input: "10, 15, 20, 7, 8"
+    Output: Sum of even numbers: 38
