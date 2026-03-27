@@ -61,6 +61,13 @@ function generateRandomArray(){
 
     let arr =input.split(",").map(num => Number(num.trim()));
 
-    
+    let sum = 0;
 
+    for(let i=0; i < arr.length; i++){
+        if (arr[i] %2 === 0){
+            sum += arr[i];
+        }
+    }
+   document.getElementById("output").textContent =
+        "Sum of even numbers : " + sum;
 }
