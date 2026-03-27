@@ -34,7 +34,11 @@ function generateRandomArray(){
      }
 
      let length = Number(input);
-
+     
+     if (isNaN(length) || length <= 0){
+         document.getElementById("result").textContent = "Invalid Number, Enter Valid Number";
+        return;
+     }
      const numbers = []
 
      for (let i = 0; i < length; i ++){
@@ -44,4 +48,6 @@ function generateRandomArray(){
      document.getElementById("result").textContent = "Array : " +  numbers;
 
 }
+
+/* Third Exercise */
 
