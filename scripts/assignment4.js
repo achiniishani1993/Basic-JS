@@ -51,3 +51,16 @@ function generateRandomArray(){
 
 /* Third Exercise */
 
+function generateRandomArray(){
+    let input = prompt("Enter the numbers you like (example: 10, 15, 20, 7, 8):");
+
+    if (input === null){
+         document.getElementById("output").textContent = "Cancelled";
+        return;
+    }
+
+    let arr =input.split(",").map(num => Number(num.trim()));
+
+    
+
+}
