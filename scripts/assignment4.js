@@ -23,3 +23,25 @@ function guessNumberGame() {
   }
 }
 
+/* Second exercise */
+
+function generateRandomArray(){
+     let input = prompt("Enter the array length (example: 5):");
+
+     if (input === null) {
+        document.getElementById("result").textContent = "Cancelled";
+        return;
+     }
+
+     let length = Number(input);
+
+     const numbers = []
+
+     for (let i = 0; i < length; i ++){
+        numbers.push(Math.floor(Math.random()*100) + 1);
+     }
+     
+     document.getElementById("result").textContent = "Array : " +  numbers;
+
+}
+
