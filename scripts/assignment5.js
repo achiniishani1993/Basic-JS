@@ -3,7 +3,7 @@ const account = {
      balance: 10000, 
 
      getBalance: function(){
-     document.getElementById("atmOutPut").innerHTML = `Your balance is: ${this.balance}`;
+     document.getElementById("atmOutPut").innerHTML = `Your balance is SEK: ${this.balance}`;
      },
      
      deposit: function (){
@@ -13,7 +13,7 @@ const account = {
             this.accountError("Invalid amount");
         }else {
             this.balance += amount;
-            document.getElementById("atmOutPut").innerHTML = `Deposit successful. New balance: ${this.balance}`;
+            document.getElementById("atmOutPut").innerHTML = `Deposit successful. New balance SEK: ${this.balance}`;
         }
      },
 
@@ -22,11 +22,11 @@ const account = {
 
         if (isNaN(withdraw) || withdraw <= 0){
             this.accountError("Invalid withdrawal amount");
-        }else if (this.balance = 0) {
+        }else if (withdraw > this.balance) {
            this.accountError("Your account not have enough money to withdraw")
         }else {
             this.balance -= withdraw;
-            document.getElementById("atmOutPut").innerHTML = `Withdrawal successful. New balance: ${this.balance}`;
+            document.getElementById("atmOutPut").innerHTML = `Withdrawal successful. New balance SEK: ${this.balance}`;
         }
         
      },
@@ -63,5 +63,5 @@ switch (choice) {
      break;
      default : account.accountError("Invalid choice. Try again");
 }
- atm();
+
 };
