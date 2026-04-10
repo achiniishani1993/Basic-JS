@@ -36,7 +36,9 @@ const account = {
      },
     
     accountError: function (error){
-     document.getElementById("atmOutPut").innerHTML = `Error: ${error}`;
+     const output = document.getElementById("atmOutPut");
+     output.style.color = "red";
+     output.innerHTML = `Getting Error: ${error}`;
     },
 
     exitAccount: function(){
