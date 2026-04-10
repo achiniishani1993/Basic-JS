@@ -1,6 +1,7 @@
 const account = {
      accountName:"Achini Ishani", 
      balance: 10000, 
+
      getBalance: function(){
      document.getElementById("atmOutPut").innerHTML = `Your balance is: ${this.balance}`;
      },
@@ -42,4 +43,25 @@ const account = {
          document.getElementById("atmOutPut").innerHTML = `Thank you for choosing us... Have a great day!`;
     }
 
-    }
+    };
+
+
+function atm(event){
+event.preventDefault();
+const choice = parseInt(prompt("Select a choice:\n1) See balance\n2) Deposit\n3) Withdraw\n4) Get account name\n5) Exit"));
+
+switch (choice) {
+    case 1 : account.getBalance();
+     break;
+     case 2 : account.deposit();
+     break;
+     case 3 : account.withdrawal();
+     break;
+     case 4 : account.getAccountName();
+     break;
+     case 5 : account.exitAccount();
+     break;
+     default : account.accountError("Invalid choice. Try again");
+}
+ atm();
+};
