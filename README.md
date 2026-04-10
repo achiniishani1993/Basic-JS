@@ -148,6 +148,7 @@ Features
 * Withdraw money
 * View account holder name
 * Error handling for invalid inputs
+* Add form validation to pin
 * Simple UI with Bootstrap styling
 
 Technologies Used

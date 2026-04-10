@@ -27,7 +27,7 @@ const account = {
     if (isNaN(withdraw) || withdraw <= 0) {
       this.accountError("Invalid withdrawal amount");
     } else if (withdraw > this.balance) {
-      this.accountError("Your account not have enough money to withdraw");
+      this.accountError("Your account not have enough balance");
     } else {
       this.balance -= withdraw;
       document.getElementById("atmOutPut").innerHTML =
@@ -54,6 +54,23 @@ const account = {
 
 function atm(event) {
   event.preventDefault();
+
+  const pin = document.getElementById("exampleInputPassword").value.trim();
+  const output = document.getElementById("atmOutPut");
+  const pinType = /^[0-9]{4}$/;
+
+  if (pin === "") {
+    output.innerHTML = `Please insert valid pin code`;
+    output.style.color = "red";
+    return;
+  } else if (!pinType.test(pin)) {
+    output.innerHTML = `Incorrect PIN code. Must be exactly 4 digits`;
+    output.style.color = "red";
+    return;
+  }
+
+  output.style.color = "black";
+
   const choice = parseInt(
     prompt(
       "Select a choice:\n1) See balance\n2) Deposit\n3) Withdraw\n4) Get account name\n5) Exit",
