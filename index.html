@@ -20,113 +20,149 @@
     <link href="/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <h1>Assignment lesson</h1>
-      <h2>Assignment lesson JS1: Intro, Variables, and Operators</h2>
-      <ol>
-        <li>Exercise 1: print "Hello World"</li>
-        <li>Exercise 2: Create variables</li>
-        <li>Exercise 3: Basic arithmetic operations</li>
-        <li>Additional: Temperature Converter</li>
-      </ol>
-    </div>
-    <div class="container">
-      <h2>Assignment lesson JS2: Keywords, String Methods, and Parse</h2>
-      <p>
-        Create a simple program that returns a price tag from the user, then
-        give them a discount of 10 percent
-      </p>
-
-      <div class="card" style="width: 18rem">
-        <img src="/Images/shoes.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Casual shoes - $ 50.00</h5>
-          <p class="card-text">
-            This summer, enjoy exclusive discounts on select products! Tap the
-            button below to reveal your special offer
-          </p>
-          <a href="#" class="btn btn-primary" onclick="priceFunction()"
-            >Click Now</a
-          >
-        </div>
+    <section>
+      <div class="container">
+        <h1>Assignment lesson</h1>
+        <h2>Assignment lesson JS1: Intro, Variables, and Operators</h2>
+        <ol>
+          <li>Exercise 1: print "Hello World"</li>
+          <li>Exercise 2: Create variables</li>
+          <li>Exercise 3: Basic arithmetic operations</li>
+          <li>Additional: Temperature Converter</li>
+        </ol>
       </div>
-      <p class="text-primary-emphasis mt-3 fs-3" id="price"></p>
-    </div>
-    <div class="container">
-      <h2>Additional-Discount Calculator</h2>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Assignment lesson JS2: Keywords, String Methods, and Parse</h2>
+        <p>
+          Create a simple program that returns a price tag from the user, then
+          give them a discount of 10 percent
+        </p>
 
-      <div class="card" style="width: 18rem">
-        <img src="/Images/men-shoes.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Casual shoes - $ 100.00</h5>
-          <p class="card-text">
-            This summer, enjoy exclusive discounts on select products! Tap the
-            button below to reveal your special offer
-          </p>
-          <a href="#" class="btn btn-primary" onclick="discountFunction()"
-            >Click Now</a
-          >
+        <div class="card" style="width: 18rem">
+          <img src="/Images/shoes.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Casual shoes - $ 50.00</h5>
+            <p class="card-text">
+              This summer, enjoy exclusive discounts on select products! Tap the
+              button below to reveal your special offer
+            </p>
+            <a href="#" class="btn btn-primary" onclick="priceFunction()"
+              >Click Now</a
+            >
+          </div>
         </div>
+        <p class="text-primary-emphasis mt-3 fs-3" id="price"></p>
       </div>
-      <p class="text-primary-emphasis mt-3 fs-3" id="discount"></p>
-    </div>
+      <div class="container">
+        <h2>Additional-Discount Calculator</h2>
 
-    <div class="container">
-      <h2>Assignment lesson JS3: Conditional Statements and Functions</h2>
-
-      <form class="p-4 bg-secondary-subtle">
-        <div class="mb-3">
-          <label for="exampleInputName" class="form-label">UserName</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputName"
-            aria-describedby="usernameHelp"
-          />
-          <small id="usernameHelp">
-            Username must be unique and contain no spaces.
-          </small>
+        <div class="card" style="width: 18rem">
+          <img src="/Images/men-shoes.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Casual shoes - $ 100.00</h5>
+            <p class="card-text">
+              This summer, enjoy exclusive discounts on select products! Tap the
+              button below to reveal your special offer
+            </p>
+            <a href="#" class="btn btn-primary" onclick="discountFunction()"
+              >Click Now</a
+            >
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-          />
-        </div>
-      
-        <button type="submit" class="btn btn-primary" onclick="formSubmit(event)">Submit</button>
-      </form>
-    </div>
+        <p class="text-primary-emphasis mt-3 fs-3" id="discount"></p>
+      </div>
+    </section>
 
-    <div class="container">
-      <h2>Assignment lesson JS4: Loops, Arrays, and Math</h2>
-      <h3>EXERCISE 1: Guess the random number</h3>
+    <section>
+      <div class="container">
+        <h2>Assignment lesson JS3: Conditional Statements and Functions</h2>
 
-       <button type="button" class="btn btn-success" onclick="guessNumberGame()">Start Game</button>
+        <form class="p-4 bg-secondary-subtle">
+          <div class="mb-3">
+            <label for="exampleInputName" class="form-label">UserName</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputName"
+              aria-describedby="usernameHelp"
+            />
+            <small id="usernameHelp">
+              Username must be unique and contain no spaces.
+            </small>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
 
-       <h3>EXERCISE 2: Create an array of random numbers</h3>
-      
-       <button type="button" class="btn btn-warning" onclick="generateRandomArray()">Create Array</button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            onclick="formSubmit(event)"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Assignment lesson JS4: Loops, Arrays, and Math</h2>
+        <h3>EXERCISE 1: Guess the random number</h3>
 
-       <p id="result"></p>
+        <button
+          type="button"
+          class="btn btn-success"
+          onclick="guessNumberGame()"
+        >
+          Start Game
+        </button>
 
-       <h3>EXERCISE 3: Calculate the sum of even numbers in the array</h3>
+        <h3>EXERCISE 2: Create an array of random numbers</h3>
 
-        <button type="button" class="btn btn-outline-danger" onclick="generateRandomArray()">Get Sum of even numbers</button>
+        <button
+          type="button"
+          class="btn btn-warning"
+          onclick="generateRandomArray()"
+        >
+          Create Array
+        </button>
 
-       <p id="output"></p>
-    </div>
-     
+        <p id="result"></p>
 
+        <h3>EXERCISE 3: Calculate the sum of even numbers in the array</h3>
 
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          onclick="generateRandomArray()"
+        >
+          Get Sum of even numbers
+        </button>
 
+        <p id="output"></p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Assignment lesson JS5: Objects and Scope</h2>
+        
+      </div>
 
+    </section>
 
     <script src="/scripts/assignment1.js"></script>
     <script src="/scripts/assignment2.js"></script>
     <script src="/scripts/assignment3.js"></script>
-     <script src="/scripts/assignment4.js"></script>
+    <script src="/scripts/assignment4.js"></script>
+    <script src="/scripts/assignment5.js"></script>
   </body>
 </html>
