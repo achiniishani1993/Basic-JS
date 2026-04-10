@@ -51,7 +51,7 @@ function generateRandomArray(){
 
 /* Third Exercise */
 
-function generateRandomArray(){
+function generateRandomArraySum(){
     let input = prompt("Enter the numbers you like (example: 10, 15, 20, 7, 8):");
 
     if (input === null){
