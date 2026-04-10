@@ -1,11 +1,12 @@
 # Basic-JS
-Practice basic Js 
+
+Practice basic Js
 
 This project contains simple JavaScript exercises for beginners to practice variables, console output, and basic arithmetic operations.
 
 Exercises Included in Assignment.js
 
-Assignment1.js
+# Assignment1.js
 
 Hello, World! – Print a message to the console.
 
@@ -15,122 +16,141 @@ Arithmetic Operations – Perform addition, subtraction, multiplication, and div
 
 Temperature Converter – Convert Celsius to Fahrenheit and display the result.
 
-Assignment2.js
+# Assignment2.js
 
- Exercise 1: Fixed 10% Discount
+Exercise 1: Fixed 10% Discount
 📌 Description
 
 This program asks the user to enter a price (including a $ sign), removes the symbol, converts the value into a number, and applies a fixed 10% discount.
 
 ⚙️ Features
 
-* Takes user input using prompt()
+- Takes user input using prompt()
 
-* Removes $ from the input
+- Removes $ from the input
 
-* Converts string to number using parseFloat()
+- Converts string to number using parseFloat()
 
-* Applies a 10% discount
+- Applies a 10% discount
 
-* Displays the new price using console.log() or DOM
+- Displays the new price using console.log() or DOM
 
- Exercise 2: Dynamic Discount Calculator
+Exercise 2: Dynamic Discount Calculator
 📌 Description
 
 This version improves the first exercise by allowing the user to enter a custom discount percentage.
 
 ⚙️ Features
 
-* Accepts price input (with $)
+- Accepts price input (with $)
 
-* Accepts discount percentage (with %)
+- Accepts discount percentage (with %)
 
-* Cleans and converts both inputs
+- Cleans and converts both inputs
 
-* Calculates:
+- Calculates:
+  - Discount amount
 
-     * Discount amount
+  - Final price
 
-     * Final price
+- Displays:
+  - Original price
 
-* Displays:
+  - Discount %
 
-     * Original price
+  - Amount saved
 
-     * Discount %
+  - Final price (formatted to 2 decimal places)
 
-     * Amount saved
+# Assignment3.js
 
-     * Final price (formatted to 2 decimal places)
+Exercise: Username & Password Validation Project
 
+Features
 
- Assignment2.js
+- Password must:
+  - Be at least 8 characters
 
- Exercise: Username & Password Validation Project
+  - Cannot contain spaces
 
- Features
+  - Cannot include the username
 
-* Password must:
+- Real-time validation using JavaScript
 
-     * Be at least 8 characters
+- Accessible HTML form with aria-describedby for helper text
 
-     * Cannot contain spaces
+- Prevents form submission if validation fails
 
-     * Cannot include the username
+# Assignment4.js
 
-* Real-time validation using JavaScript
-
-* Accessible HTML form with aria-describedby for helper text
-
-* Prevents form submission if validation fails
-
-Assignment4.js
-
-This file contains solutions for three JavaScript exercises 
+This file contains solutions for three JavaScript exercises
 focused on user input, arrays, loops, and basic arithmetic.
 
---------------------------------------------------------------
-EXERCISE 1: Guess the Random Number
---------------------------------------------------------------
-- Function: guessNumberGame()
-- Description: 
-    Generates a random number between 1 and 10. 
-    Repeatedly prompts the user to guess the number until correct. 
-    Provides feedback if the guess is too high, too low, or correct.
-- Features:
-    • Handles Cancel (ends the game if user clicks Cancel)
-    • Uses a while loop for repeated guesses
-    • Gives hints for user guidance
-- Example usage:
-    Click a button to start the game → prompt asks for a guess → alerts feedback
+---
 
---------------------------------------------------------------
-EXERCISE 2: Create an Array of Random Numbers
---------------------------------------------------------------
+## EXERCISE 1: Guess the Random Number
+
+- Function: guessNumberGame()
+- Description:
+  Generates a random number between 1 and 10.
+  Repeatedly prompts the user to guess the number until correct.
+  Provides feedback if the guess is too high, too low, or correct.
+- Features:
+  • Handles Cancel (ends the game if user clicks Cancel)
+  • Uses a while loop for repeated guesses
+  • Gives hints for user guidance
+- Example usage:
+  Click a button to start the game → prompt asks for a guess → alerts feedback
+
+---
+
+## EXERCISE 2: Create an Array of Random Numbers
+
 - Function: generateRandomArray(length)
 - Description:
-    Generates an array of specified length containing random numbers 
-    between 1 and 100.
+  Generates an array of specified length containing random numbers
+  between 1 and 100.
 - Parameters:
-    • length (Number): desired length of the array
+  • length (Number): desired length of the array
 - Returns: Array of random numbers
 - Features:
-    • Validates user input when used with prompt
-    • Displays result in HTML when connected to a button
+  • Validates user input when used with prompt
+  • Displays result in HTML when connected to a button
 
---------------------------------------------------------------
-EXERCISE 3: Calculate the Sum of Even Numbers in an Array
---------------------------------------------------------------
+---
+
+## EXERCISE 3: Calculate the Sum of Even Numbers in an Array
+
 - Function: sumEvenNumbers(arr) or sumEvenFromInput()
 - Description:
-    Calculates the sum of all even numbers in an array.
+  Calculates the sum of all even numbers in an array.
 - Parameters:
-    • arr (Array of Numbers): the array to sum
+  • arr (Array of Numbers): the array to sum
 - Returns: Number (sum of even numbers)
 - Features:
-    • Can take user input from prompt as comma-separated values
-    • Handles Cancel gracefully
-    • Displays results in HTML instead of console
+  • Can take user input from prompt as comma-separated values
+  • Handles Cancel gracefully
+  • Displays results in HTML instead of console
 - Example:
-    Input: "10, 15, 20, 7, 8"
-    Output: Sum of even numbers: 38
+  Input: "10, 15, 20, 7, 8"
+  Output: Sum of even numbers: 38
+
+  # Assignment5.js
+  
+  ATM Banking System (JavaScript Project)
+  
+  This is a simple ATM banking system built using HTML, JavaScript, and Bootstrap. It demonstrates the use of JavaScript objects, methods, and basic DOM manipulation.
+ 
+
+Features
+* Check account balance
+* Deposit money
+* Withdraw money
+* View account holder name
+* Error handling for invalid inputs
+* Simple UI with Bootstrap styling
+
+Technologies Used
+* HTML5
+* JavaScript (ES6 Objects & Methods)
+* Bootstrap 5
