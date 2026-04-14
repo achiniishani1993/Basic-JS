@@ -155,3 +155,17 @@ Technologies Used
 * HTML5
 * JavaScript (ES6 Objects & Methods)
 * Bootstrap 5
+
+ # Assignment6.js
+
+🎬 Movie Tracker App
+
+A simple JavaScript-based movie tracker that allows users to manage a list of movies using browser prompts.
+
+🚀 Features
+* Add a new movie
+* View all movies
+* Mark a movie as watched
+* Remove a movie
+* View unwatched movies
+* Exit the application anytime
