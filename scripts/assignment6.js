@@ -1,4 +1,3 @@
-
 const movies = [];
 let running = true;
 
@@ -50,7 +49,7 @@ function listMovies() {
 
 function markAsWatched(title) {
   const movie = movies.find(
-    (m) => m.title.toLowerCase() === title.toLowerCase()
+    (m) => m.title.toLowerCase() === title.toLowerCase(),
   );
 
   if (movie) {
@@ -63,7 +62,7 @@ function markAsWatched(title) {
 
 function removeMovie(title) {
   const index = movies.findIndex(
-    (m) => m.title.toLowerCase() === title.toLowerCase()
+    (m) => m.title.toLowerCase() === title.toLowerCase(),
   );
 
   if (index !== -1) {
