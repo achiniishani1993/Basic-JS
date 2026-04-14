@@ -57,3 +57,16 @@ function remove(title){
 
 }
 
+function listUnWatchMovies(){
+    const unWatch = movies.filter((movie)=> !movie.isRead);
+    if (unWatch.length === 0){
+         document.getElementById("movieOutPut").innerHTML = "No unwatched movies" ;
+         return;
+    }
+
+    let output = "";
+    unWatch.forEach((movie, index) => {
+        output += `${movie.title} by ${movie.director} You have not watch yet <br>`;
+    });
+     document.getElementById("movieOutPut").innerHTML = output;
+}
