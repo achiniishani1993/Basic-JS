@@ -1,15 +1,30 @@
+
 const movies = [];
 let running = true;
 
 function addMovies() {
   const title = prompt("Enter movie name: ");
+  if (title === null) {
+    running = false;
+    return;
+  }
+
   const director = prompt("Enter director name: ");
+  if (director === null) {
+    running = false;
+    return;
+  }
+
   const isReadInput = prompt("Have you watched it? (yes/no)");
+  if (isReadInput === null) {
+    running = false;
+    return;
+  }
 
   const movie = {
-    title: title,
-    director: director,
-    isRead: isReadInput.toLocaleLowerCase() === "yes",
+    title,
+    director,
+    isRead: isReadInput.toLowerCase() === "yes",
   };
 
   movies.push(movie);
@@ -18,55 +33,120 @@ function addMovies() {
 
 function listMovies() {
   if (movies.length === 0) {
-    document.getElementById("movieOutPut").innerHTML =
-      "No movies in your list. Please add your movies first";
+    alert("No movies in your list.");
     return;
   }
 
-  let outPut = "";
+  let output = "";
 
   movies.forEach((movie, index) => {
-    outPut += `${index + 1}. ${movie.title} by  ${movie.director} - ${movie.isRead ? "Watched" : "Not Watched"}<br>`;
+    output += `${index + 1}. ${movie.title} by ${movie.director} - ${
+      movie.isRead ? "Watched" : "Not Watched"
+    }\n`;
   });
 
-  document.getElementById("movieOutPut").innerHTML = outPut;
+  alert(output);
 }
 
-function markAsRead(title) {
+function markAsWatched(title) {
   const movie = movies.find(
-    (m) => m.title.toLowerCase() === title.toLowerCase(),
+    (m) => m.title.toLowerCase() === title.toLowerCase()
   );
 
   if (movie) {
     movie.isRead = true;
-    listMovies();
+    alert(`"${movie.title}" marked as watched`);
   } else {
-    document.getElementById("movieOutPut").innerHTML = "Movie not found";
+    alert("Movie not found");
   }
 }
 
-function remove(title){
-    const index = movies.findIndex((m) => m.title.toLowerCase() === title.toLowerCase());
+function removeMovie(title) {
+  const index = movies.findIndex(
+    (m) => m.title.toLowerCase() === title.toLowerCase()
+  );
 
-    if (index !== -1){
-        const removed = movies.splice(index, 1);
-        document.getElementById("movieOutPut").innerHTML = `"${removed[0].title}" has removed from the list`;
-    }else {
-        document.getElementById("movieOutPut").innerHTML = "Movie not found" ;
-    }
-
+  if (index !== -1) {
+    const removed = movies.splice(index, 1);
+    alert(`"${removed[0].title}" removed`);
+  } else {
+    alert("Movie not found");
+  }
 }
 
-function listUnWatchMovies(){
-    const unWatch = movies.filter((movie)=> !movie.isRead);
-    if (unWatch.length === 0){
-         document.getElementById("movieOutPut").innerHTML = "No unwatched movies" ;
-         return;
+function listUnWatchMovies() {
+  const unWatch = movies.filter((movie) => !movie.isRead);
+
+  if (unWatch.length === 0) {
+    alert("No unwatched movies");
+    return;
+  }
+
+  let output = "";
+  unWatch.forEach((movie) => {
+    output += `${movie.title} by ${movie.director} (Not Watched)\n`;
+  });
+
+  alert(output);
+}
+
+function movieApp() {
+  running = true;
+
+  while (running) {
+    const choice = prompt(`Movie Tracker
+1. Add Movie
+2. List Movies
+3. Mark movie as Watched
+4. Remove Movie
+5. List Unwatched movies
+6. Exit
+Enter your choice:`);
+
+    if (choice === null) {
+      running = false;
+      alert("App cancelled");
+      break;
     }
 
-    let output = "";
-    unWatch.forEach((movie, index) => {
-        output += `${movie.title} by ${movie.director} You have not watch yet <br>`;
-    });
-     document.getElementById("movieOutPut").innerHTML = output;
+    switch (choice) {
+      case "1":
+        addMovies();
+        break;
+
+      case "2":
+        listMovies();
+        break;
+
+      case "3":
+        const titleToMark = prompt("Enter title to mark as watched:");
+        if (titleToMark === null) {
+          running = false;
+          break;
+        }
+        markAsWatched(titleToMark);
+        break;
+
+      case "4":
+        const titleToRemove = prompt("Enter title to remove:");
+        if (titleToRemove === null) {
+          running = false;
+          break;
+        }
+        removeMovie(titleToRemove);
+        break;
+
+      case "5":
+        listUnWatchMovies();
+        break;
+
+      case "6":
+        running = false;
+        alert("Good Bye!");
+        break;
+
+      default:
+        alert("Invalid choice, try again!");
+    }
+  }
 }
